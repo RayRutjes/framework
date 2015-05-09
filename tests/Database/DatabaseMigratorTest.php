@@ -223,7 +223,7 @@ class DatabaseMigratorTest extends PHPUnit_Framework_TestCase {
 		$migrator->getRepository()->shouldReceive('getRan')->once()->andReturn([
 			$fooMigration->migration,
 			$barMigration->migration,
-			$bazMigration->migration	
+			$bazMigration->migration
 		]);
 
 		$connection = m::mock('stdClass');
